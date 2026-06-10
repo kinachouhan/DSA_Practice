@@ -362,45 +362,114 @@
 // console.log(orders)
 
 // 21. Mini E-Commerce System
-let products = []
+// let products = []
 
-function addProduct(productName , price , stock){
-     products.push({
-        id: products.length+1,
-        name: productName,
-        price,
-        stock
-    })
-}
-addProduct("Laptop" , 50000 , 10)
-addProduct("Keyboard" , 1000 , 20)
+// function addProduct(productName , price , stock){
+//      products.push({
+//         id: products.length+1,
+//         name: productName,
+//         price,
+//         stock
+//     })
+// }
+// addProduct("Laptop" , 50000 , 10)
+// addProduct("Keyboard" , 1000 , 20)
 
-function removeProduct(id){
-    products = products.filter( (product)=> product.id !== id)
-}
-removeProduct(1)
+// function removeProduct(id){
+//     products = products.filter( (product)=> product.id !== id)
+// }
+// removeProduct(1)
 
-function updateStock(id , stock){
-     let product = products.find( product => product.id == id)
-     if(product){
-        product.stock = stock
-     }
-}
-updateStock(2, 10)
+// function updateStock(id , stock){
+//      let product = products.find( product => product.id == id)
+//      if(product){
+//         product.stock = stock
+//      }
+// }
+// updateStock(2, 10)
 
-function purchaseProducts(id){
-    let product = products.find( (product)=> product.id == id)
-    if(product){
-        product.stock-= 1
-    }
-    return `1 ${product.name} purchased`;
-}
-purchaseProducts(2)
+// function purchaseProducts(id){
+//     let product = products.find( (product)=> product.id == id)
+//     if(product){
+//         product.stock-= 1
+//     }
+//     return `1 ${product.name} purchased`;
+// }
+// purchaseProducts(2)
 
-function calculateInventoryValues(){
-    return products.reduce( (acc, val)=>{
-        return acc +(val.price*val.stock)
-    },0)
-}
-console.log(calculateInventoryValues())
-console.log(products)
+// function calculateInventoryValues(){
+//     return products.reduce( (acc, val)=>{
+//         return acc +(val.price*val.stock)
+//     },0)
+// }
+// console.log(calculateInventoryValues())
+// console.log(products)
+
+// 22. Print: Fizz → divisible by 3 , Buzz → divisible by 5 , FizzBuzz → divisible by both
+// function FizzBuzz(num){
+//     if(num%5==0 && num%3==0){
+//         console.log("FizzBuzz")
+//     }else if(num%3==0){
+//         console.log("Fizz")
+//     }else if(num%5==0){
+//         console.log("Buzz")
+//     }else{
+//         console.log(num)
+//     }
+// }
+// FizzBuzz(2)
+
+// 23. [1,[2,3],[4,[5]]]
+// let arr = [1,[2,3],[4,[5]]]
+// function flatten(arr){
+//     return arr.flat(Infinity)
+// }
+// console.log(flatten(arr))
+
+//24. implement once()
+// function once(fn){
+//     let call = false
+//     let result
+//     return function(...args){
+//         if(!call){
+//             call = true
+//             result = fn(...args)
+//         }
+//         return result
+//     }
+    
+// }
+// const fn = once((a,b)=>a+b)
+// console.log(fn(2,3))
+
+// 25. Implement memoize()
+// function memoize(fn){
+//     let result = {}
+//     return function(...args){
+//         let key = args.join(",")
+//         if(key in result){
+//             console.log("Caching from result")
+//             return result[key]
+//         }
+//         return result[key] = fn(...args)
+//     }
+// }
+// const add = (a, b) => a + b;
+// const memoizedAdd = memoize(add);
+// console.log(memoizedAdd(2, 3)); 
+// console.log(memoizedAdd(2, 3));
+
+// // 26. counter
+// function counter(){
+//     let count = 0
+//     return function(){
+//          count++
+//          return count
+//     }
+// }
+// let count = counter()
+// console.log(count())
+// console.log(count())
+
+
+
