@@ -471,5 +471,43 @@
 // console.log(count())
 // console.log(count())
 
+// 27. Write a recursive function for factorial.
+// function factorial(num){
+//     if(num<=0) return 1
+//     return num*factorial(num-1)
+// }
+// console.log(factorial(5))
+
+// //28. Write recursive Fibonacci function.
+// function fibonacciFn(num){
+//     if(num<=1) return num
+//     return fibonacciFn(num-1) + fibonacciFn(num-2) 
+// }
+// console.log(fibonacciFn(5))
 
 
+// //29. Create a function that finds power using recursion.
+// function FindPower(base , pow){
+//     if(pow <= 0) return 1
+//     return base * FindPower(base , pow-1)
+// }
+// console.log(FindPower(2,3))
+
+// // 30. Reverse an array.
+// let arr = [1,2,3,4,5]
+// let reverse = []
+// for(let i=arr.length-1 ; i>=0 ; i--){
+//    reverse.push(arr[i])
+// }
+// console.log(reverse)
+
+// 31. Sort numbers ascending.
+// let arr = [4,2,1,3,5,6,7,8]
+
+// let sorted = arr.sort( (a,b)=> a-b)
+// console.log(sorted)
+
+// 32. Sort numbers descending.
+// let arr = [4,2,1,3,5,6,7,8]
+// let sorted = arr.sort( (a,b)=> b-a)
+// console.log(sorted)
